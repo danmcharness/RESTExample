@@ -1,3 +1,4 @@
+import com.restexample.mobile.Image
 import com.restexample.mobile.Manufacturer
 import com.restexample.mobile.Phone
 import com.restexample.mobile.ProductVariation
@@ -21,6 +22,7 @@ class BootStrap {
                 def phone = new Phone()
                 phone.name = "${phonePrefix[random.nextInt(phonePrefix.size())]} ${phoneMiddle[random.nextInt(phonePrefix.size())]} " +
                              "${letters[random.nextInt(letters.size())]}${numbers[random.nextInt(numbers.size())]}"
+                phone.description = phone.name
 
                 def price = random.nextInt(500)
                 def isFirst = true
@@ -35,6 +37,8 @@ class BootStrap {
                     phone.addToProductVariations(variation)
                 }
 
+                def image = new Image(url: "www.blah.com", caption: phone.name, isPrimary: true)
+                phone.addToImages(image)
                 manufacturer.addToProducts(phone)
             }
 
