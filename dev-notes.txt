@@ -1,0 +1,6 @@
+
+Renderers:
+    provided: JSON & XML
+    default renderer: grails.rest.render.json.JsonRenderer
+    JsonRenderer:
+        uses default converter: grails.converters.JSON
