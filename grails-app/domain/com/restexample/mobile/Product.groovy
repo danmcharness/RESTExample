@@ -7,10 +7,10 @@ class Product {
 
     static belongsTo = [manufacturer: Manufacturer]
 
-//    static hasMany = [images: Image,
-//                      productVariations: ProductVariation]
+    static hasMany = [images: Image,
+                      productVariations: ProductVariation]
 
-    static hasMany = [productVariations: ProductVariation]
+//    static hasMany = [productVariations: ProductVariation]
 
     static constraints = {
         description nullable: true
