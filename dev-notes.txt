@@ -1,4 +1,7 @@
 
+http://groovyc.net/designing-a-non-trivial-restful-api/
+http://groovyc.net/non-trivial-restful-apis-in-grails-part-1/
+
 Renderers:
     provided: JSON & XML
     default renderer: grails.rest.render.json.JsonRenderer

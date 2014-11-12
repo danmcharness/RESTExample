@@ -7,6 +7,8 @@ class UrlMappings {
             }
         }
 
+//        "/api/phones"(resources: 'phone', excludes: ['create', 'edit'])
+
         "/"(view:"/index")
         "500"(view:'/error')
 	}
